@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:rlr="https://roadlessread.com/sitemap-ext">
+
+    <!-- HOMEPAGE -->
+    <url>
+        <rlr:title>Homepage</rlr:title>
+        <loc>https://roadlessread.com/</loc>
+        <lastmod>2025-11-19</lastmod>
+        <rlr:content>Where it all begins.</rlr:content>
+        <rlr:category>pages</rlr:category>
+    </url>
+
+    <!-- PAGES -->
+
+    <!-- About -->
+    <url>
+        <rlr:title>About</rlr:title>
+        <loc>https://roadlessread.com/about</loc>
+        <lastmod>2025-11-19</lastmod>
+        <rlr:content>The site's colophon, contact information, disclaimer, and review policy.</rlr:content>
+        <rlr:category>pages</rlr:category>
+    </url>
+
+    <!-- Links -->
+    <url>
+        <rlr:title>Links</rlr:title>
+        <loc>https://roadlessread.com/links</loc>
+        <lastmod>2025-11-19</lastmod>
+        <rlr:content>Interesting bookish things worth perusing galore! Begin an internet expedition.</rlr:content>
+        <rlr:category>pages</rlr:category>
+    </url>
+
+    <!-- CATEGORIES -->
+
+    <!-- Lists -->
+    <url>
+        <rlr:title>Lists</rlr:title>
+        <loc>https://roadlessread.com/lists/</loc>
+        <lastmod>2025-11-19</lastmod>
+        <rlr:content>Whether they be themed book recommendations or sites to visit, you'll find countless ones here.</rlr:content>
+        <rlr:category>post_categories</rlr:category>
+    </url>
+
+    <!-- Notes -->
+    <url>
+        <rlr:title>Notes</rlr:title>
+        <loc>https://roadlessread.com/notes/</loc>
+        <lastmod>2025-11-19</lastmod>
+        <rlr:content>Ideas, essays, musings, tutorials, and resources.</rlr:content>
+        <rlr:category>post_categories</rlr:category>
+    </url>
+
+    <!-- Reviews -->
+    <url>
+        <rlr:title>Reviews</rlr:title>
+        <loc>https://roadlessread.com/reviews/</loc>
+        <lastmod>2025-11-19</lastmod>
+        <rlr:content>Books I've read and adored and provided commentary on. Ever-growing as I collect more.</rlr:content>
+        <rlr:category>post_categories</rlr:category>
+    </url>
+
+    <!-- REVIEWS -->
+
+    <url>
+        <rlr:title>Understanding Comics by Scott McCloud</rlr:title>
+        <loc>https://roadlessread.com/reviews/understandcomic</loc>
+        <lastmod>2025-11-19</lastmod>
+        <rlr:content>Read this for November's IndieWeb Book Club.</rlr:content>
+        <rlr:category>reviews</rlr:category>
+        <rlr:subcategory>non-fiction</rlr:subcategory>
+    </url>
+
+</urlset>

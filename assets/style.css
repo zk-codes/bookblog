@@ -1,0 +1,345 @@
+/* ---- Global Setup ---- */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---- Fonts ---- */
+
+@font-face {
+    font-family: 'Bokor'; 
+    src: url('/assets/bokor.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Smythe'; 
+    src: url('/assets/smythe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---- Variables ---- */
+
+:root {
+    --body-bg: antiquewhite;
+    --text: #2c0735;
+    --content-bg: #fffaf0;
+    --content-border: #d4c29c;
+    --accent: #4e148c;
+    --sidebar-bg: #fcf6e4;
+    --sidebar-border: #d4c29c;
+}
+
+/* ---- Base Styles ---- */
+
+body {
+    font-family: 'Smythe', serif;
+    font-size: 1.8em;
+    line-height: 1.5em;
+    background-color: var(--body-bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed var(--accent);
+    margin: 1.5em 0;
+}
+
+/* --- Links ---- */
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 2px dashed var(--accent);
+    position: relative;
+    display: inline-block;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-out;
+}
+
+a:hover {
+    border-bottom: 2px solid transparent;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+a[rel="noopener"]:not(:has(img))::after {
+    content: url('/assets/link.svg');
+    display: inline;
+    width: 0.85em;
+    height: 0.85em;
+    margin-left: 0.25em;
+    vertical-align: middle;
+    position: static;
+    background: none;
+}
+
+/* ---- Typography ---- */
+
+h1, h2, h3, h4 {
+    font-weight: 800;
+    font-family: 'Bokor', serif;
+    color: var(--accent);
+    border-bottom: 3px double var(--accent);
+    padding-bottom: 0.3em;
+    line-height: 1em;
+}
+
+h1 {
+    font-size: 2.4em;
+    letter-spacing: -0.045em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+.dropcap::first-letter {
+    float: left;
+    font-size: 3.5em;
+    line-height: 0.8;
+    font-family: 'Bokor', serif;
+    color: var(--accent);
+    margin-right: 0.1em;
+    padding-right: 0.05em;
+    border-right: 1px solid var(--accent);
+    margin-top: 0.1em;
+}
+
+/* ---- Layout ---- */
+
+body {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 280px;
+    background-color: var(--sidebar-bg);
+    border-right: 2px solid var(--sidebar-border);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+    z-index: 100;
+}
+
+.main-content-area {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 0.2em 2em 0.2em 2em;
+    background-color: var(--body-bg);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- Main Content Elements --- */
+
+.smalltext {
+    font-size: 0.75em;
+}
+
+details {
+    border: 1px solid var(--accent);
+    padding: 1em;
+    margin: 1.5em 0;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+summary {
+    font-weight: bold;
+    color: var(--accent);
+    cursor: pointer;
+    letter-spacing: 0.02em;
+}
+
+details ul {
+    list-style: none;
+    padding-left: 1em;
+    margin-top: 1em;
+}
+
+details li {
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+details li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: -1em;
+}
+
+.end {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+}
+
+.book-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    flex-direction: row-reverse;
+}
+
+#book-box-image {
+    flex: 0 0 35%;
+    max-width: 35%;
+    margin-bottom: 0;
+}
+
+#book-box-content {
+    text-align: left;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 80%;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.link-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    flex-direction: row-reverse;
+}
+
+#link-box-image {
+    flex: 0 0 35%;
+    max-width: 35%;
+    margin-bottom: 0;
+}
+
+#book-box-content {
+    text-align: left;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 80%;
+}
+
+
+/* --- Sidebar Elements ---- */
+
+.sitetitle {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0.9em;
+}
+
+.sidebar nav p {
+    margin: 0;
+}
+
+/* ---- H-Card ---- */
+
+.h-card {
+    display: flex;
+    vertical-align: middle;
+    align-items: left;
+    gap: 1.5em;
+}
+
+#h-card-image {
+    margin-bottom: 0;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+#h-card-content {
+    text-align: left;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 80%;
+}
+
+/* ---- Responsive Design ---- */
+
+@media (max-width: 900px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        border-right: none;
+        border-bottom: 2px solid var(--sidebar-border);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        padding-bottom: 1em;
+        z-index: auto; /* Reset z-index */
+    }
+
+    .main-content-area {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 1em;
+    }
+
+    .h-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h-card-image {
+        margin-bottom: 1em;
+    }
+
+    .sidebar nav a {
+        display: inline-block;
+        margin: 0 0.5em;
+        border-left: none;
+        padding: 0.5em 1em;
+    }
+
+    .sidebar nav a:hover {
+        border-left: none;
+    }
+
+}
