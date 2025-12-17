@@ -2,3 +2,18 @@ Sitemap: https://roadlessread.com/sitemap.xml
 
 User-agent: *
 Allow: /
+
+# -- Disallows
+
+# Files
+
+Disallow: /.gitignore
+Disallow: /404
+Disallow: /LICENSE
+Disallow: /llm.txt
+Disallow: /random
+Disallow: /README.md
+
+# Folders
+
+Disallow: /assets/
