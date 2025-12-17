@@ -368,7 +368,9 @@ unset($category); // Unset reference to avoid issues
 
                 <!-- Footer Links -->
                 <section>
-                    <p><strong>Useful Links</strong>: <a href="/random">Random Page</a></p>
+                    <p><strong>Useful Links</strong>: 
+                        <a href="/changelog">Changelog</a> | 
+                        <a href="/random">Random Page</a></p>
                 </section>
 
             </footer>
