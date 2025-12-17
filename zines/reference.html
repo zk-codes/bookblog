@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Reference | Zine-o-pedia</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: Georgia, serif; line-height: 1.7; max-width: 800px; margin: 0 auto; padding: 2rem; background: #f9f7f4; color: #2a2a2a;}
+        header {border-bottom: 3px solid #000; padding-bottom: 1rem; margin-bottom: 2rem;}
+        h1 {font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;}
+        .breadcrumb {font-size: 0.9rem; margin-bottom: 1rem;}
+        .breadcrumb a {color: #000; text-decoration: none; border-bottom: 1px solid #000;}
+        .breadcrumb a:hover {background: #000; color: #fff;}
+        h2 {font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid #666;}
+        h3 {font-size: 1.3rem; margin-top: 1.5rem; margin-bottom: 0.75rem; font-style: italic;}
+        p {margin-bottom: 1rem;}
+        .aside {background: #fff; border: 2px dashed #999; padding: 1rem; margin: 1.5rem 0; font-size: 0.95rem;}
+        .aside strong {display: block; margin-bottom: 0.5rem; font-size: 1.05rem;}
+        .footnote {background: #fffacd; border-left: 3px solid #f0e68c; padding: 1rem; margin: 1.5rem 0; font-size: 0.9rem;}
+        .box {background: #e8f4f8; border: 2px solid #4a90a4; padding: 1.5rem; margin: 1.5rem 0;}
+        .box h3 {margin-top: 0; color: #2c5f6f;}
+        .spec-table {width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: #fff;}
+        .spec-table th {background: #2c5f6f; color: #fff; padding: 0.75rem; text-align: left; border: 1px solid #1a3a45;}
+        .spec-table td {padding: 0.75rem; border: 1px solid #ccc;}
+        .spec-table tr:nth-child(even) {background: #f9f9f9;}
+        .diagram {background: #fff; border: 2px solid #000; padding: 1.5rem; margin: 1.5rem 0; text-align: center; font-family: monospace;}
+        em {font-style: italic;}
+        strong {font-weight: bold;}
+        a {color: #2c5f6f; text-decoration: underline;}
+        a:hover {background: #2c5f6f; color: #fff;}
+        .cross-ref {font-size: 0.9rem; font-style: italic; color: #555; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ccc;}
+    </style>
+</head>
+<body>
+    <header>
+        <p class="breadcrumb"><a href="index.html">Zine-o-pedia</a> → Technical Reference</p>
+        <h1>Technical Reference</h1>
+    </header>
+
+    <p>This is the nuts-and-bolts page—paper sizes, folding patterns, binding methods, and all the practical technical information that's boring until you need it, at which point it becomes extremely useful. This is reference material, not inspiring reading. Bookmark it and come back when you need to know exactly how wide a half-size zine page is or what weight of paper to use.</p>
+
+    <h2>Standard Paper Sizes</h2>
+
+    <p>Most zines start with standard paper because that's what's accessible and affordable. Knowing paper sizes helps you plan layouts and printing.</p>
+
+    <table class="spec-table">
+        <thead>
+            <tr>
+                <th>Size Name</th>
+                <th>Dimensions (inches)</th>
+                <th>Dimensions (mm)</th>
+                <th>Common Uses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Letter (US)</strong></td>
+                <td>8.5" × 11"</td>
+                <td>216mm × 279mm</td>
+                <td>Standard US paper, most common for zines</td>
+            </tr>
+            <tr>
+                <td><strong>A4 (International)</strong></td>
+                <td>8.27" × 11.69"</td>
+                <td>210mm × 297mm</td>
+                <td>Standard outside US, slightly narrower and taller</td>
+            </tr>
+            <tr>
+                <td><strong>Legal (US)</strong></td>
+                <td>8.5" × 14"</td>
+                <td>216mm × 356mm</td>
+                <td>Longer format, good for unusual layouts</td>
+            </tr>
+            <tr>
+                <td><strong>Tabloid/Ledger (US)</strong></td>
+                <td>11" × 17"</td>
+                <td>279mm × 432mm</td>
+                <td>Double letter size, good for larger zines</td>
+            </tr>
+            <tr>
+                <td><strong>A3 (International)</strong></td>
+                <td>11.69" × 16.54"</td>
+                <td>297mm × 420mm</td>
+                <td>Double A4, similar to tabloid</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section class="footnote">
+        <strong>Footnote on International Differences:</strong> If you're in the US, you'll work primarily with letter-sized paper. Rest of the world uses A4. They're close enough that most layouts work on either, but be aware when sharing files internationally or ordering from overseas printers. A4 is part of a logical system where each size is half the previous (A3 folded = A4, A4 folded = A5, etc.). US paper sizes are arbitrary and weird, but we're stuck with them.
+    </section>
+
+    <h2>Common Zine Formats and Sizes</h2>
+
+    <h3>Half-Size Zine</h3>
+
+    <p>The most common format. Take a letter-sized sheet (8.5" × 11"), fold it in half, and you get a 5.5" × 8.5" page. This is what most people mean when they say "zine-sized." It's portable, familiar, and efficient.</p>
+
+    <p><strong>How it works:</strong> You print or write on both sides of letter paper, fold each sheet in half, nest the sheets together, and staple through the spine. Four letter-sized sheets create a 16-page half-size zine (including covers).</p>
+
+    <section class="box">
+        <h3>Page Count Math for Half-Size Zines</h3>
+        <p>Each folded letter-sized sheet = 4 pages. So:</p>
+        <p>1 sheet = 4 pages | 2 sheets = 8 pages | 3 sheets = 12 pages | 4 sheets = 16 pages | 5 sheets = 20 pages | 6 sheets = 24 pages | 8 sheets = 32 pages</p>
+        <p>Page counts are always multiples of 4 in this format. If your content doesn't fit perfectly, add blank pages, images, or filler content.</p>
+    </section>
+
+    <h3>Quarter-Size Zine</h3>
+
+    <p>A letter sheet folded twice creates a 4.25" × 5.5" page. These are cute, pocket-sized, and use minimal paper, but the small size limits what you can do. Good for mini-zines, poetry, or experimental formats.</p>
+
+    <p><strong>Page count:</strong> Each sheet = 8 pages. Quarter-size zines tend to be short—8, 16, or 24 pages typically.</p>
+
+    <h3>Full-Size Zine</h3>
+
+    <p>Not folded—letter-sized pages stapled or bound together like a magazine. Less common but useful for content that needs more space, like large images or generous text layouts.</p>
+
+    <p><strong>Page count:</strong> Whatever you want. Each sheet = 2 pages (front and back).</p>
+
+    <h3>One-Page Zine (8-Page Mini)</h3>
+
+    <p>A single sheet of paper, folded and cut in a specific pattern, creates an 8-page booklet. This is the ultimate beginner format—quick, cheap, fun. Many tutorials exist online for the folding pattern.</p>
+
+    <section class="diagram">
+        <pre>
+One-Page Zine Folding Pattern:
+
+1. Fold paper in half lengthwise (hamburger fold)
+2. Fold in half again (now it's in quarters)
+3. Fold in half once more (now in eighths)
+4. Unfold completely
+5. Refold lengthwise (original first fold)
+6. Cut along center fold, but only halfway
+7. Unfold completely
+8. Fold lengthwise again
+9. Push ends together so center opens
+10. Fold into booklet shape
+
+[Search "one page zine" for video tutorials—
+it's much easier to see than to read]
+        </pre>
+    </section>
+
+    <h2>Paper Weight and Type</h2>
+
+    <p>Paper weight is measured in pounds (US) or grams per square meter (international). It matters for durability, feel, and how well it photocopies.</p>
+
+    <table class="spec-table">
+        <thead>
+            <tr>
+                <th>Weight (lb)</th>
+                <th>Weight (gsm)</th>
+                <th>Description</th>
+                <th>Best For</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20-24 lb</td>
+                <td>75-90 gsm</td>
+                <td>Standard copy paper</td>
+                <td>Interior pages of zines</td>
+            </tr>
+            <tr>
+                <td>28-32 lb</td>
+                <td>105-120 gsm</td>
+                <td>Premium copy paper</td>
+                <td>Interior pages when you want nicer feel</td>
+            </tr>
+            <tr>
+                <td>65-80 lb</td>
+                <td>175-215 gsm</td>
+                <td>Cardstock/cover weight</td>
+                <td>Covers, when you want durability</td>
+            </tr>
+            <tr>
+                <td>110 lb+</td>
+                <td>300+ gsm</td>
+                <td>Heavy cardstock</td>
+                <td>Covers, postcards, art prints</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section class="aside">
+        <strong>Aside: Paper Choice Philosophy</strong>
+        Most zines use whatever cheap copy paper is available—usually 20lb white. This is fine. Fancy paper doesn't make a zine better, and part of the DIY aesthetic is embracing humble materials. That said, if you want to splurge on nice paper for covers or for a special edition, it does change the feel. Colored paper, textured paper, heavier stock—all options, none necessary.
+    </section>
+
+    <h2>Folding Techniques</h2>
+
+    <h3>Basic Folding</h3>
+
+    <p><strong>For half-size zines:</strong> Fold each sheet in half, creating a crisp crease. Stack folded sheets in order (page 1 outermost, middle pages innermost). The order matters—if you print pages in the wrong order, your zine will be incomprehensible.</p>
+
+    <p><strong>Making crisp folds:</strong> Use a bone folder (a bookbinding tool), the edge of a ruler, or your fingernail to crease folds sharply. This makes the zine look more professional and makes binding easier.</p>
+
+    <h3>Page Ordering for Half-Size Zines</h3>
+
+    <p>This confuses everyone at first. When you fold pages and nest them, the page order on the flat sheets is not intuitive.</p>
+
+    <p>For a 16-page zine (4 sheets of letter paper):</p>
+
+    <p><strong>Sheet 1 (outermost):</strong> Pages 16-1 | 2-15 (folded, outside sheet contains front cover, back cover, pages 2 and 15)</p>
+
+    <p><strong>Sheet 2:</strong> Pages 14-3 | 4-13</p>
+
+    <p><strong>Sheet 3:</strong> Pages 12-5 | 6-11</p>
+
+    <p><strong>Sheet 4 (innermost):</strong> Pages 10-7 | 8-9</p>
+
+    <section class="footnote">
+        <strong>Footnote on Layout Software:</strong> Programs like InDesign, Scribus (free), or even Word have settings for booklet printing that automatically arrange pages in the correct order. If you're doing layout digitally, use these features. If you're doing cut-and-paste physical layout, you need to figure out the page order manually. Make a dummy zine first to understand how pages nest.
+    </section>
+
+    <h2>Binding Methods</h2>
+
+    <h3>Stapling (Saddle Stitch)</h3>
+
+    <p>The standard zine binding. Two or three staples through the spine of nested, folded pages. It's quick, cheap, and works for up to about 60-80 pages (15-20 sheets of paper) before the spine gets too thick.</p>
+
+    <p><strong>Tools needed:</strong> Long-reach stapler (a stapler that can reach the center of a folded page). Regular staplers don't work unless you unfold pages, staple from the outside, and fold back. Some people use this method, bending the staple legs flat with a butter knife.</p>
+
+    <p><strong>Technique:</strong> Open nested pages flat, staple from the outside through all layers, make sure staples go through cleanly. Check that all pages are secured.</p>
+
+    <section class="box">
+        <h3>DIY Stapling Without a Long-Reach Stapler</h3>
+        <p>Open your zine flat to the center pages. Place it on a surface you don't mind damaging (cardboard or thick magazine). Place stapler upside down and press hard to staple through all layers from the outside. Flip zine over, bend staple legs flat with a ruler or butter knife. This works but is more labor-intensive. For many copies, get a proper long-reach stapler—they're worth it.</p>
+    </section>
+
+    <h3>Sewing</h3>
+
+    <p>Thread or embroidery floss sewn through holes punched in the spine. More time-consuming than stapling but looks beautiful, holds up better, and requires no special tools besides a needle.</p>
+
+    <p><strong>Basic method:</strong> Punch 3-5 holes along the spine using an awl, needle, or drill (for thick zines). Thread needle with strong thread. Sew through holes in a pattern that secures all pages. Tie off ends inside.</p>
+
+    <p><strong>Common stitch patterns:</strong> Pamphlet stitch (most common for zines), coptic stitch (more complex, allows zine to lie flat), long stitch (decorative, exposed thread on spine).</p>
+
+    <h3>Perfect Binding</h3>
+
+    <p>Pages glued together at the spine, like a paperback book. This requires special adhesive and is typically only done for longer zines (80+ pages) where stapling doesn't work. Most zinesters don't bother unless they're doing professional printing.</p>
+
+    <h3>Other Binding Options</h3>
+
+    <p><strong>Spiral/comb binding:</strong> Requires special equipment but lets zines lie completely flat. Some copy shops offer this service cheaply.</p>
+
+    <p><strong>Rubber band or paper clip:</strong> The anti-binding. Just stack pages and hold them together. Very DIY, very punk, falls apart easily.</p>
+
+    <p><strong>Rivets, brads, or Chicago screws:</strong> Metal fasteners through punched holes. Decorative and durable, but requires tools.</p>
+
+    <h2>Printing Terminology</h2>
+
+    <h3>DPI (Dots Per Inch)</h3>
+
+    <p>Resolution of images. For photocopying, 300 DPI is standard. Lower resolution looks pixelated when printed. If you're working with digital images, save them at 300 DPI for printing.</p>
+
+    <h3>Bleed</h3>
+
+    <p>When an image extends to the edge of a page, you need bleed—extra image area beyond the trim edge. Standard bleed is 0.125" (3mm). This matters for professional printing but not for photocopying where you're not trimming.</p>
+
+    <h3>Registration</h3>
+
+    <p>Alignment of multiple print layers, especially color layers. Misregistration is when colors don't line up perfectly. Photocopiers don't have this issue (black and white only), but it's relevant for risograph or other color printing.</p>
+
+    <h3>Duplex Printing</h3>
+
+    <p>Printing on both sides of paper automatically. Most modern photocopiers have duplex capability. Specify whether you want short-edge or long-edge binding (affects orientation when pages flip).</p>
+
+    <section class="aside">
+        <strong>Aside: Test Prints Are Your Friend</strong>
+        Before you print 50 copies, print one test copy. Check that pages are in the right order, nothing is cut off, everything is legible, images look good. Fold it, bind it, see if it works. Fix problems. Print another test. Only when everything is right should you do the full run. This saves money and frustration.
+    </aside>
+
+    <h2>Cutting and Trimming</h2>
+
+    <p>Most folded zines don't require cutting except for the one-page mini format. But if you want to trim edges for a cleaner look, here are your options:</p>
+
+    <p><strong>Paper cutter/guillotine:</strong> The professional solution. Cuts many pages at once, straight lines, clean edges. Copy shops and libraries often have these.</p>
+
+    <p><strong>Craft knife and ruler:</strong> Cut one zine at a time using a metal ruler as a guide and a sharp craft knife. Cut on a self-healing cutting mat or thick cardboard. Slow but gives you control.</p>
+
+    <p><strong>Scissors:</strong> Workable for small runs or when precision isn't crucial. Harder to get perfectly straight lines.</p>
+
+    <section class="footnote">
+        <strong>Footnote on Deckled Edges:</strong> Deckled edges (rough, uneven edges) can be a feature rather than a bug. If your cutting is imperfect, lean into it. Call it an aesthetic choice. Many art zines intentionally have rough edges because it looks handmade and authentic. Perfection is overrated.
+    </section>
+
+    <h2>Copyright, Licensing, and Legal Bits</h2>
+
+    <h3>Your Rights as Creator</h3>
+
+    <p>In most countries, you automatically own copyright to anything you create. You don't need to register it or put a © symbol (though you can). This means you control reproduction, distribution, and derivative works.</p>
+
+    <h3>Using Others' Content</h3>
+
+    <p>Using copyrighted images, text, or other content without permission is technically copyright infringement. For small personal zines with tiny print runs, this is rarely enforced—you're not worth suing. But legally, you should either:</p>
+
+    <p><strong>Get permission:</strong> Ask the creator if you can use their work. Many people say yes, especially if you credit them and you're not profiting.</p>
+
+    <p><strong>Use public domain material:</strong> Content where copyright has expired (usually 70+ years old) or explicitly released to public domain.</p>
+
+    <p><strong>Use Creative Commons:</strong> Content licensed for reuse under specific conditions. Check the license terms.</p>
+
+    <p><strong>Create your own:</strong> Use only content you make yourself or have rights to.</p>
+
+    <section class="aside">
+        <strong>Aside: Fair Use Is Complicated</strong>
+        "Fair use" allows limited use of copyrighted material for criticism, parody, education, etc. But fair use is a legal defense, not a right—meaning you'd have to argue it in court if sued. For zines, the safe assumption is: if you're selling it, don't use copyrighted material without permission. If you're giving it away for personal/educational use, the risk is lower but still exists. Use your judgment. <a href="history-culture.html">See History &amp; Culture for more on copyright considerations</a>.
+    </section>
+
+    <h3>Licensing Your Own Work</h3>
+
+    <p>You can choose how others can use your zine:</p>
+
+    <p><strong>All rights reserved:</strong> Standard copyright. Others can't reproduce without permission.</p>
+
+    <p><strong>Creative Commons:</strong> You allow certain uses (like non-commercial sharing) while retaining some rights. Popular in zine culture.</p>
+
+    <p><strong>Copyleft/Anti-copyright:</strong> You explicitly allow anyone to reproduce and distribute. Some zinesters put "anti-copyright" on their zines as a political statement.</p>
+
+    <h2>Storage and Preservation</h2>
+
+    <p>If you're making zines to last (for archives, for future readers, for yourself), consider preservation:</p>
+
+    <p><strong>Paper quality:</strong> Acid-free paper lasts longer. Regular copy paper yellows and deteriorates over decades. If longevity matters, use archival paper.</p>
+
+    <p><strong>Ink/toner:</strong> Laser printer toner is more permanent than inkjet ink. Photocopier toner is also stable. Inkjet prints can fade or smudge over time, especially if exposed to moisture.</p>
+
+    <p><strong>Storage:</strong> Keep zines in cool, dry places, away from direct sunlight. Avoid humid environments. Archival boxes or sleeves protect from dust and handling damage.</p>
+
+    <p><strong>Digital backups:</strong> Scan your zines as PDFs. Even if physical copies are lost or destroyed, digital versions preserve content. Many zine libraries prefer donations to come with digital scans.</p>
+
+    <section class="box">
+        <h3>Donating to Archives</h3>
+        <p>If you want your zines preserved for history, donate to zine libraries and archives. They know how to store and care for them properly. Most accept donations of 2-3 copies (one for lending, one for preservation, one for backup). <a href="resources-archives.html">See Resources &amp; Archives for where to donate</a>.</p>
+    </section>
+
+    <h2>Quick Reference: Common Questions</h2>
+
+    <p><strong>How many pages should my first zine be?</strong> 8, 16, or 24 pages. Start small.</p>
+
+    <p><strong>What size should I make it?</strong> Half-size (5.5" × 8.5") is standard and familiar.</p>
+
+    <p><strong>How many copies should I print?</strong> 25-50 for your first run. You can always print more.</p>
+
+    <p><strong>What's the best way to bind?</strong> Stapling if you have a long-reach stapler, sewing if you don't.</p>
+
+    <p><strong>Do I need special software?</strong> No. You can make zines with pen and paper, Word, free programs, or professional tools. Use what you have access to.</p>
+
+    <p><strong>How do I figure out page order?</strong> Make a dummy zine by folding blank paper and numbering pages. Then lay it flat to see where each number appears.</p>
+
+    <p><strong>Can I use color?</strong> Color photocopies are expensive. Most zines are black and white. If you want color affordably, consider risograph or just colored paper.</p>
+
+    <section class="cross-ref">
+        <strong>Related Reading:</strong> For how to apply these technical details in practice, see <a href="making-zines.html">Making Zines</a>. For understanding why certain technical choices matter aesthetically and culturally, check out <a href="history-culture.html">History &amp; Culture</a>. For examples of different technical approaches, see <a href="notable-zines.html">Notable Zines &amp; Creators</a>.
+    </section>
+</body>
+</html>

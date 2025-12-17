@@ -4,14 +4,15 @@
     <!-- HEAD -->
     <head>
         <meta charset="utf-8">
-        <title>Page Not Found | Road Less Read</title>
+        <title><!-- PAGE_TITLE --></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
-        
+        <link rel="stylesheet" href="/assets/style.css">
         <link rel="webmention" href="https://webmention.io/zacharykai.net/webmention" />
-        <link rel="canonical" href="https://roadlessread.com/404">
-        
-        <meta name="description" content="I couldn't find the page you were looking for, unfortunately! Not sure what happened there. Try going back to the homepage, or browsing through the sitemap?">
+        <link rel="canonical" href="https://roadlessread.com/">
+        <meta name="date" content="20XX-XX-XX">
+        <meta name="last-modified" content="20XX-XX-XX">
+        <meta name="description" content="">
     </head>
     <body>
 
@@ -19,14 +20,13 @@
 
         <aside class="sidebar">
 
-            <p><a href="#top">Begin/resume reading...</a></p>
+            <p><a href="#top" class="smalltext">Begin/resume reading...</a></p>
 
             <!-- Header Menu -->
             <header>
                 <p class="sitetitle"><a href="/">Road Less Read</a></p>
                 <nav>
                     <p><a href="/about.html">About</a></p>
-                    <p><a href="/links">Links</a></p>
                     <p><a href="/lists/">Lists</a></p>
                     <p><a href="https://lunaseeker.com/newsletter/" rel="noopener">Newsletter</a></p>
                     <p><a href="/notes/">Notes</a></p>
@@ -35,7 +35,7 @@
                 </nav>
             </header>
 
-            <p>Est. 2019</p>
+            <p class="smalltext">Est. 2019</p>
 
         </aside>
 
@@ -44,20 +44,63 @@
 
             <!-- Header -->
             <header>
-                <p><a href="/">Homepage</a></p>
-                <h1 class="p-name">Bother! Page Not Found</h1>
+                <p class="smalltext"><a href="/">Homepage</a> ↴</p>
+                <h1 class="p-name">Lists</h1>
                 <p class="smalltext">
-                    <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
-                    <strong>Published</strong>: <time class="dt-published" datetime="2019-01-01">1 Jan 2019</time> |
-                    <strong>Updated</strong>: <time class="dt-modified" datetime="2025-11-25">25 11 2025</time>
+                    <strong>Published</strong>: <time class="dt-published" datetime="2025-12-05">5 Dec 2025</time> |
+                    <strong>Updated</strong>: <time class="dt-modified" datetime="2025-12-05">5 Dec 2025</time>
                 </p>
             </header>
 
             <!-- PRIMARY CONTENT -->
-            <p id="top" class="p-summary">I couldn't find the page you were looking for, unfortunately! Try going back to <a href="/">the homepage</a>, or looking through <a href="/sitemap.html">the sitemap</a>?</p>
+            <p id="top" class="p-summary dropcap">Here are all my book recommendation lists! Happy browsing.</p>
 
             <section>
+                <!-- Table Of Contents -->
+                <details>
+                    <summary><strong>Table Of Contents</strong></summary>
+                    <ul>
+                        <li><a href="#fantasy">Fantasy</a></li>
+                        <li><a href="#scifi">Scifi</a></li>
+                        <li><a href="#ya">Young Adult</a></li>
+                    </ul>
+                </details>
+            </section>
 
+            <section>
+                <!-- Fantasy -->
+                <h2 id="fantasy">Fantasy</h2>
+                <p>Escape or adventure to another world.</p>
+                <ul>
+                    <li><a href="/lists/sanderson">Authors Like Brandon Sanderson</a></li>
+                    <li><a href="/lists/pratchett">Authors Like Terry Pratchett</a></li>
+                    <li><a href="/lists/riordan">Authors Like Rick Riordan</a></li>
+                    <li><a href="/lists/mistborn">Books Like Mistborn</a></li>
+                    <li><a href="/lists/nimona">Books Like Nimona</a></li>
+                    <li><a href="/lists/percy">Books Like Percy Jackson</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <!-- Scifi -->
+                <h2 id="scifi">Scifi</h2>
+                <p>Take a journey to the stars and beyond!</p>
+                <ul>
+                    <li><a href="/lists/vonnegut">Authors Like Kurt Vonnegut</a></li>
+                    <li><a href="/lists/1984">Books Like 1984</a></li>
+                    <li><a href="/lists/divergent">Books Like Divergent</a></li>
+                    <li><a href="/lists/rp1">Books Like Ready Player One</a></li>
+                    <li><a href="/lists/expanse">Books Like The Expanse</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <!-- Young Adult -->
+                <h2 id="ya">Young Adult</h2>
+                <p>Contemporary or historical, aimed at a young (and young-at-heart) audience.</p>
+                <ul>
+                    <li><a href="/lists/bookthief">Books Like The Book Thief</a></li>
+                </ul>
             </section>
 
             <p class="end">←------ •--♡--• ------→</p>
@@ -73,17 +116,17 @@
 
                 <!-- H-Card -->
                 <section class="h-card vcard">
-                    <section class="h-card-image">
+                    <section id="h-card-image">
                         <picture>
                             <source srcset="/assets/icon.webp" type="image/webp">
                             <img class="u-photo" loading="lazy" src="/assets/icon.png" alt="Zachary Kai's digital drawing: 5 stacked books (blue/teal/green/purple, black spine designs), green plant behind top book, purple heart on either side.">
                         </picture>
                     </section>
-                    <section>
+                    <section id="h-card-content">
                         <p><strong><a class="u-url u-id p-name" href="https://roadlessread.com" rel="me">
                         <span class="fn">Zachary Kai</span></a></strong> — 
                         <span class="p-pronouns">he/him</span> | 
-                        <a class="u-email email" href="mailto:hi@zacharykai.net" rel="me">hi@zacharykai.net</a></p>
+                        <a class="u-email email" href="mailto:hi@zacharykai.net" rel="me">hi@roadlessread.com</a></p>
                         <p class="p-note">Zachary Kai is a space fantasy writer, offbeat queer, traveler, zinester, and avowed generalist. The internet is his livelihood and lifeline.</p>
                     </section>
                 </section>

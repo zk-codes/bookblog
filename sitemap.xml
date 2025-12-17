@@ -5,8 +5,8 @@
     <url>
         <rlr:title>Homepage</rlr:title>
         <loc>https://roadlessread.com/</loc>
-        <lastmod>2025-11-19</lastmod>
-        <rlr:content>Where it all begins.</rlr:content>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>where it all begins.</rlr:content>
         <rlr:category>pages</rlr:category>
     </url>
 
@@ -16,8 +16,8 @@
     <url>
         <rlr:title>About</rlr:title>
         <loc>https://roadlessread.com/about</loc>
-        <lastmod>2025-11-19</lastmod>
-        <rlr:content>The site's colophon, contact information, disclaimer, and review policy.</rlr:content>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>the site's colophon, contact information, disclaimer, and review policy.</rlr:content>
         <rlr:category>pages</rlr:category>
     </url>
 
@@ -25,8 +25,8 @@
     <url>
         <rlr:title>Links</rlr:title>
         <loc>https://roadlessread.com/links</loc>
-        <lastmod>2025-11-19</lastmod>
-        <rlr:content>Interesting bookish things worth perusing galore! Begin an internet expedition.</rlr:content>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>interesting bookish things worth perusing galore! Begin an internet expedition.</rlr:content>
         <rlr:category>pages</rlr:category>
     </url>
 
@@ -36,8 +36,8 @@
     <url>
         <rlr:title>Lists</rlr:title>
         <loc>https://roadlessread.com/lists/</loc>
-        <lastmod>2025-11-19</lastmod>
-        <rlr:content>Whether they be themed book recommendations or sites to visit, you'll find countless ones here.</rlr:content>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>whether they be themed book recommendations or sites to visit, you'll find countless ones here.</rlr:content>
         <rlr:category>post_categories</rlr:category>
     </url>
 
@@ -45,8 +45,8 @@
     <url>
         <rlr:title>Notes</rlr:title>
         <loc>https://roadlessread.com/notes/</loc>
-        <lastmod>2025-11-19</lastmod>
-        <rlr:content>Ideas, essays, musings, tutorials, and resources.</rlr:content>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>ideas, essays, musings, tutorials, and resources.</rlr:content>
         <rlr:category>post_categories</rlr:category>
     </url>
 
@@ -54,18 +54,220 @@
     <url>
         <rlr:title>Reviews</rlr:title>
         <loc>https://roadlessread.com/reviews/</loc>
-        <lastmod>2025-11-19</lastmod>
-        <rlr:content>Books I've read and adored and provided commentary on. Ever-growing as I collect more.</rlr:content>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>books I've read and adored and provided commentary on. Ever-growing as I collect more.</rlr:content>
         <rlr:category>post_categories</rlr:category>
+    </url>
+
+    <!-- LISTS -->
+
+    <url>
+        <!-- Ultimate Book List -->
+        <rlr:title>Ultimate Book List</rlr:title>
+        <loc>https://roadlessread.com/lists/books</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>the only SFF/YA/Non-Fiction one you'll ever need.</rlr:content>
+        <rlr:category>lists</rlr:category>
+    </url>
+
+    <!-- Fantasy -->
+
+    <url>
+        <!-- Authors Like Brandon Sanderson -->
+        <rlr:title>Authors Like Brandon Sanderson</rlr:title>
+        <loc>https://roadlessread.com/lists/sanderson</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>other epic volumes worth reading.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>fantasy</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Authors Like Rick Riordan -->
+        <rlr:title>Authors Like Rick Riordan</rlr:title>
+        <loc>https://roadlessread.com/lists/riordan</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>more myths, quests, and loveable teenage heroes.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>fantasy</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Authors Like Terry Pratchett -->
+        <rlr:title>Authors Like Terry Pratchett</rlr:title>
+        <loc>https://roadlessread.com/lists/pratchett</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>carrying the hiliarty and deftness forward in spirt.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>fantasy</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Books Like Mistborn -->
+        <rlr:title>Books Like Mistborn</rlr:title>
+        <loc>https://roadlessread.com/lists/mistborn</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>more fantastical magic systems and scales of the epic kind.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>fantasy</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Books Like Nimona -->
+        <rlr:title>Books Like Nimona</rlr:title>
+        <loc>https://roadlessread.com/lists/nimona</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>speculative comics on the scale of the intimate yet world-changing.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>fantasy</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Books Like Percy Jackson -->
+        <rlr:title>Books Like Percy Jackson</rlr:title>
+        <loc>https://roadlessread.com/lists/percy</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>more adventures, delightfully alive protagonists, and myths.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>fantasy</rlr:subcategory>
+    </url>
+
+    <!-- Scifi -->
+
+    <url>
+        <!-- Authors Like Kurt Vonnegut -->
+        <rlr:title>Authors Like Kurt Vonnegut</rlr:title>
+        <loc>https://roadlessread.com/lists/vonnegut</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>more writers to match his clear-eyed prose.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>scifi</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Books Like 1984 -->
+        <rlr:title>Books Like 1984</rlr:title>
+        <loc>https://roadlessread.com/lists/1984</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>recommendations for reads in the spirit of this dystopian classic.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>scifi</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Books Like Divergent -->
+        <rlr:title>Books Like Divergent</rlr:title>
+        <loc>https://roadlessread.com/lists/divergent</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>other reads if one's in the mood for dystopian futures.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>scifi</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Books Like Ready Player One -->
+        <rlr:title>Books Like Ready Player One</rlr:title>
+        <loc>https://roadlessread.com/lists/rp1</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>other nostalgic and game minded science fiction tales.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>scifi</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Books Like The Expanse -->
+        <rlr:title>Books Like The Expanse</rlr:title>
+        <loc>https://roadlessread.com/lists/expanse</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>more starflung futures in the solar system and thrilling adventures.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>scifi</rlr:subcategory>
+    </url>
+
+    <!-- Young Adult -->
+
+    <url>
+        <!-- Books Like The Book Thief -->
+        <rlr:title>Books Like The Book Thief</rlr:title>
+        <loc>https://roadlessread.com/lists/bookthief</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>other historicals and sweeping narratives to accompany this haunting volume.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>young_adult</rlr:subcategory>
+    </url>
+
+    <!-- NOTES -->
+
+    <!-- Resources -->
+
+    <url>
+        <!-- Barnes And Noble Stats -->
+        <rlr:title>Barnes And Noble Stats</rlr:title>
+        <loc>https://roadlessread.com/notes/bandn</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>facts and figures regarding this bookstore chain.</rlr:content>
+        <rlr:category>notes</rlr:category>
+        <rlr:subcategory>statistics</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Book Blogs -->
+        <rlr:title>Book Blogs</rlr:title>
+        <loc>https://roadlessread.com/notes/books</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>blogs and sites of the literature-enthusiast kind.</rlr:content>
+        <rlr:category>notes</rlr:category>
+        <rlr:subcategory>bookish_lists</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Book Crafts -->
+        <rlr:title>Book Crafts</rlr:title>
+        <loc>https://roadlessread.com/notes/crafts</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>what to make with old books, creative projects, and gift ideas.</rlr:content>
+        <rlr:category>notes</rlr:category>
+        <rlr:subcategory>bookish_fun</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- How To Gift Wrap A Book -->
+        <rlr:title>How To Gift Wrap A Book</rlr:title>
+        <loc>https://roadlessread.com/notes/wrap</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>fun and esoteric ways to give a book as a gift.</rlr:content>
+        <rlr:category>notes</rlr:category>
+        <rlr:subcategory>bookish_fun</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Poetry Blogs -->
+        <rlr:title>Poetry Blogs</rlr:title>
+        <loc>https://roadlessread.com/notes/poems</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>blogs and sites of the poetry-loving kind.</rlr:content>
+        <rlr:category>notes</rlr:category>
+        <rlr:subcategory>bookish_lists</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- Writing Blogs -->
+        <rlr:title>Writing Blogs</rlr:title>
+        <loc>https://roadlessread.com/notes/writing</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>blogs and sites of the writerly kind.</rlr:content>
+        <rlr:category>notes</rlr:category>
+        <rlr:subcategory>bookish_lists</rlr:subcategory>
     </url>
 
     <!-- REVIEWS -->
 
     <url>
+        <!-- Understanding Comics by Scott McCloud -->
         <rlr:title>Understanding Comics by Scott McCloud</rlr:title>
         <loc>https://roadlessread.com/reviews/understandcomic</loc>
-        <lastmod>2025-11-19</lastmod>
-        <rlr:content>Read this for November's IndieWeb Book Club.</rlr:content>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>read this for November 2025's IndieWeb Book Club.</rlr:content>
         <rlr:category>reviews</rlr:category>
         <rlr:subcategory>non-fiction</rlr:subcategory>
     </url>

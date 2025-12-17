@@ -109,7 +109,6 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 2.4em;
-    letter-spacing: -0.045em;
 }
 
 h2 {
@@ -130,6 +129,11 @@ h3 {
     padding-right: 0.05em;
     border-right: 1px solid var(--accent);
     margin-top: 0.1em;
+}
+
+.caption {
+    font-size: 0.75em;
+    text-align: center;
 }
 
 /* ---- Layout ---- */
@@ -185,7 +189,6 @@ summary {
     font-weight: bold;
     color: var(--accent);
     cursor: pointer;
-    letter-spacing: 0.02em;
 }
 
 details ul {

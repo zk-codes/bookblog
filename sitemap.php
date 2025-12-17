@@ -170,7 +170,7 @@ unset($category); // Unset reference to avoid issues
         <link rel="webmention" href="https://webmention.io/zacharykai.net/webmention" />
         <link rel="canonical" href="https://roadlessread.com/sitemap">
         <meta name="date" content="2019-01-01">
-        <meta name="last-modified" content="2025-11-24">
+        <meta name="last-modified" content="2025-12-05">
         <meta name="description" content="">
     </head>
     <body>
@@ -208,8 +208,9 @@ unset($category); // Unset reference to avoid issues
                 <p class="smalltext">You Are Here → <a href="/">Homepage</a> ↴</p>
                 <h1 class="p-name">Sitemap</h1>
                 <p class="smalltext">
+                    <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
                     <strong>Published</strong>: <time class="dt-published" datetime="2019-01-01">1 Jan 2019</time> |
-                    <strong>Updated</strong>: <time class="dt-modified" datetime="2025-11-24">24 Nov 2025</time>
+                    <strong>Updated</strong>: <time class="dt-modified" datetime="2025-12-05">5 Dec 2025</time>
                 </p>
             </header>
 

@@ -49,6 +49,7 @@
                 <p class="smalltext">You Are Here → <a href="/">Homepage</a> ↴</p>
                 <h1 class="p-name">Enough With The Doomscrolling!</h1>
                 <p class="smalltext">
+                    <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
                     <strong>Published</strong>: <time class="dt-published" datetime="2019-06-02">2 Jun 2019</time> |
                     <strong>Updated</strong>: <time class="dt-modified" datetime="2025-11-15">15 Nov 2025</time>
                 </p>
