@@ -289,8 +289,8 @@ details li::before {
 
 #h-card-image {
     margin-bottom: 0;
-    flex: 0 0 20%;
-    max-width: 20%;
+    flex: 0 0 18%;
+    max-width: 18%;
 }
 
 #h-card-content {
