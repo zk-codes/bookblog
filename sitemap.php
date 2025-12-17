@@ -179,7 +179,8 @@ unset($category); // Unset reference to avoid issues
 
         <aside class="sidebar">
 
-            <p><a href="#top" class="smalltext">Begin/resume reading...</a></p>
+            <!-- Skip/Return Link -->
+            <p><a href="#top" class="smalltext">Skip/Return To Top</a></p>
 
             <!-- Header Menu -->
             <header>
