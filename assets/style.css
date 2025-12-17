@@ -7,15 +7,16 @@
 /* ---- Fonts ---- */
 
 @font-face {
-    font-family: 'Bokor'; 
-    src: url('/assets/bokor.ttf') format('truetype');
+    font-family: 'Smythe'; 
+    src: url('/assets/smythe.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Smythe'; 
-    src: url('/assets/smythe.ttf') format('truetype');
+    font-family: 'Vollkorn'; 
+    src: url('/assets/vollkorn-italic.ttf') format('truetype');
+    src: url('/assets/vollkorn.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -35,8 +36,8 @@
 /* ---- Base Styles ---- */
 
 body {
-    font-family: 'Smythe', serif;
-    font-size: 1.8em;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.6em;
     line-height: 1.5em;
     background-color: var(--body-bg);
     color: var(--text);
@@ -100,7 +101,7 @@ a[rel="noopener"]:not(:has(img))::after {
 
 h1, h2, h3, h4 {
     font-weight: 800;
-    font-family: 'Bokor', serif;
+    font-family: 'Smythe', serif;
     color: var(--accent);
     border-bottom: 3px double var(--accent);
     padding-bottom: 0.3em;
@@ -123,7 +124,7 @@ h3 {
     float: left;
     font-size: 3.5em;
     line-height: 0.8;
-    font-family: 'Bokor', serif;
+    font-family: 'Smythe', serif;
     color: var(--accent);
     margin-right: 0.1em;
     padding-right: 0.05em;
@@ -267,6 +268,7 @@ details li::before {
 /* --- Sidebar Elements ---- */
 
 .sitetitle {
+    font-family: 'Smythe';
     font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 0.9em;
