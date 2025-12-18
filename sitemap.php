@@ -183,18 +183,17 @@ unset($category); // Unset reference to avoid issues
             <p><a href="#top" class="smalltext">Skip/Return To Top</a></p>
 
             <!-- Header Menu -->
-            <header>
+           <header>
                 <p class="sitetitle"><a href="/">Road Less Read</a></p>
                 <nav>
-                    <p><a href="/about">About</a></p>
+                    <p><a href="/about.html">About</a></p>
                     <p><a href="/links">Links</a></p>
                     <p><a href="/lists/">Lists</a></p>
-                    <p><a href="https://lunaseeker.com/newsletter/" rel="noopener">Newsletter</a></p>
                     <p><a href="/notes/">Notes</a></p>
                     <p><a href="/reviews/">Reviews</a></p>
-                    <p><a href="/assets/rss.xml">RSS</a></p>
-                    <p><a href="/sitemap">Sitemap</a></p>
+                    <p><a href="/sitemap.html">Sitemap</a></p>
                 </nav>
+                <p class="highlight"><a href="/subscribe">Subscribe</a></p>
             </header>
 
             <p class="smalltext">Est. 2019</p>
