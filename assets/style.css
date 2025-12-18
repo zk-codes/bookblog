@@ -173,6 +173,16 @@ body {
     flex-direction: column;
 }
 
+.newsletter {
+    font-family: 'Smythe';
+    font-size: 1.4em;
+    border: 2px solid #5b21b6;
+    padding: 0.3em 0.45em;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
 /* ---- Main Content Elements --- */
 
 .smalltext {
@@ -344,8 +354,8 @@ details li::before {
         align-items: center;
     }
 
-    .h-card-image {
-        margin-bottom: 1em;
+    #h-card-image {
+        max-width: 100%;
     }
 
     .sidebar nav a {
@@ -357,6 +367,10 @@ details li::before {
 
     .sidebar nav a:hover {
         border-left: none;
+    }
+
+    .newsletter {
+        margin-bottom: 2em;
     }
 
 }
