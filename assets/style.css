@@ -198,6 +198,10 @@ details ul {
     margin-top: 1em;
 }
 
+li {
+    padding-bottom: 0.75em;
+}
+
 details li {
     margin-bottom: 0.5em;
     position: relative;
@@ -269,13 +273,21 @@ details li::before {
 
 .sitetitle {
     font-family: 'Smythe';
-    font-size: 1.4em;
-    font-weight: bold;
+    font-size: 1.6em;
     margin-bottom: 0.9em;
 }
 
 .sidebar nav p {
     margin: 0;
+}
+
+.highlight {
+    font-family: 'Smythe';
+    font-size: 1.4em;
+    border: 2px solid #5b21b6;
+    padding: 0.6em 0.25em;
+    display: inline-block;
+    font-weight: bold;
 }
 
 /* ---- H-Card ---- */
