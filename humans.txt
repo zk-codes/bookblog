@@ -1,0 +1,17 @@
+# --- HUMANS.TXT - Road Less Read
+
+# -- Maintainer
+
+# Zachary Kai: zacharykai.net
+
+# -- Site
+
+# Established: 2019
+# Technologies: Static HTML + CSS, Some PHP Scripts (Formerly WordPress)
+# Tools: DitherMeThis, VSCodium, Vultur
+
+# -- With Thanks
+
+# Christine Neale
+# James: jamesg.blog
+# Nathaniel: buymeacoffee.com/doodad
