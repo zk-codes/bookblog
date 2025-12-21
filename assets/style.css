@@ -120,10 +120,14 @@ h3 {
     font-size: 1.7em;
 }
 
+main p:not(footer p) {
+    line-height: 1.8em;
+}
+
 .dropcap::first-letter {
     float: left;
-    font-size: 3.5em;
-    line-height: 0.8;
+    font-size: 3.6em;
+    line-height: 0.9;
     font-family: 'Smythe', serif;
     color: var(--accent);
     margin-right: 0.1em;
