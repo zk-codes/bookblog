@@ -9,6 +9,7 @@ Allow: /
 
 Disallow: /.gitignore
 Disallow: /404
+Disallow: /humans.txt
 Disallow: /LICENSE
 Disallow: /llm.txt
 Disallow: /random
