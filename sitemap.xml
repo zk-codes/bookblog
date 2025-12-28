@@ -226,6 +226,16 @@
         <rlr:subcategory>yearly_compiliations</rlr:subcategory>
     </url>
 
+    <url>
+        <!-- The 2026 Road Less Read Challenge -->
+        <rlr:title>The 2026 Road Less Read Challenge</rlr:title>
+        <loc>https://roadlessread.com/lists/26challenge</loc>
+        <lastmod>2025-12-27</lastmod>
+        <rlr:content>I thought I’d start one of these!</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>yearly_compiliations</rlr:subcategory>
+    </url>
+
     <!-- NOTES -->
 
     <!-- Resources -->
