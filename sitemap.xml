@@ -214,6 +214,18 @@
         <rlr:subcategory>young_adult</rlr:subcategory>
     </url>
 
+    <!-- Yearly Compilations -->
+
+    <url>
+        <!-- Books I Want To Read In 2026 -->
+        <rlr:title>Books I Want To Read In 2026</rlr:title>
+        <loc>https://roadlessread.com/lists/26tbr</loc>
+        <lastmod>2025-12-27</lastmod>
+        <rlr:content>books I wish to read in the coming year.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>yearly_compiliations</rlr:subcategory>
+    </url>
+
     <!-- NOTES -->
 
     <!-- Resources -->
