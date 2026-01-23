@@ -88,6 +88,15 @@
         <rlr:category>lists</rlr:category>
     </url>
 
+    <url>
+        <!-- The IndieWeb Book Club -->
+        <rlr:title>The IndieWeb Book Club</rlr:title>
+        <loc>https://roadlessread.com/lists/iwbc</loc>
+        <lastmod>2026-01-23</lastmod>
+        <rlr:content>revitalizing a community book club with host interviews.</rlr:content>
+        <rlr:category>lists</rlr:category>
+    </url>
+
     <!-- Fantasy -->
 
     <url>
