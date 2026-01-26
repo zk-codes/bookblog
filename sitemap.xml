@@ -77,6 +77,15 @@
         <rlr:category>post_categories</rlr:category>
     </url>
 
+    <!-- Tools -->
+    <url>
+        <rlr:title>Tools</rlr:title>
+        <loc>https://roadlessread.com/tools/</loc>
+        <lastmod>2026-01-26</lastmod>
+        <rlr:content>useful tools for book lovers, writers, and creators.</rlr:content>
+        <rlr:category>post_categories</rlr:category>
+    </url>
+
     <!-- LISTS -->
 
     <url>
@@ -348,6 +357,18 @@
         <rlr:content>read this for November 2025's IndieWeb Book Club.</rlr:content>
         <rlr:category>reviews</rlr:category>
         <rlr:subcategory>non-fiction</rlr:subcategory>
+    </url>
+
+    <!-- TOOLS -->
+
+    <url>
+        <!-- 8-Page Mini Zine Template -->
+        <rlr:title>8-Page Mini Zine Template</rlr:title>
+        <loc>https://roadlessread.com/tools/minizine</loc>
+        <lastmod>2026-01-26</lastmod>
+        <rlr:content>download printable templates for folded mini zines.</rlr:content>
+        <rlr:category>tools</rlr:category>
+        <rlr:subcategory>creative</rlr:subcategory>
     </url>
 
 </urlset>

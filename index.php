@@ -33,6 +33,7 @@
                     <p><a href="/notes/">Notes</a></p>
                     <p><a href="/reviews/">Reviews</a></p>
                     <p><a href="/sitemap.html">Sitemap</a></p>
+                    <p><a href="/tools/">Tools</a></p>
                 </nav>
                 <p class="highlight"><a href="/subscribe">Subscribe</a></p>
             </header>
@@ -71,70 +72,74 @@
 
                 <ul>
                 <?php
-
-                    // Source Directories 
-                    $directories = [
+                // Source Directories
+                $directories = [
                     __DIR__ . '/lists/',
                     __DIR__ . '/notes/',
                     __DIR__ . '/reviews/',
-                    ];
-                    $posts = [];
+                    __DIR__ . '/tools/',
+                ];
+                $posts = [];
 
-    foreach ($directories as $currentDir) {
-        if (is_dir($currentDir)) {
-            $files = scandir($currentDir);
+                // Scan directories for HTML and PHP files
+                foreach ($directories as $currentDir) {
+                    if (is_dir($currentDir)) {
+                        $files = scandir($currentDir);
 
-            foreach ($files as $file) {
-                if (pathinfo($file, PATHINFO_EXTENSION) === 'html') {
-                    $filePath = $currentDir . $file;
-                    $content = file_get_contents($filePath);
-                    $title = '';
-                    $dateAttr = '';
+                        foreach ($files as $file) {
+                            $extension = pathinfo($file, PATHINFO_EXTENSION);
 
-                    // Extract Title & Remove " | Zachary Kai"
-                    if (preg_match('/<title>(.*?)<\/title>/s', $content, $matches)) {
-                        $fullTitle = trim($matches[1]);
-                        $title = preg_replace('/ \-| Road Less Read$/i', '', $fullTitle);
-                    }
+                            if ($extension === 'html' || $extension === 'php') {
+                                $filePath = $currentDir . $file;
+                                $content = file_get_contents($filePath);
+                                $title = '';
+                                $dateAttr = '';
 
-                    // Extract DateTime Attribute
-                    if (preg_match('/<time\s+class="dt-published"\s+datetime="([^"]+)">.*?<\/time>/s', $content, $matches)) {
-                        $dateAttr = $matches[1];
-                    }
+                                // Extract Title & Remove " | Zachary Kai"
+                                if (preg_match('/<title>(.*?)<\/title>/s', $content, $matches)) {
+                                    $fullTitle = trim($matches[1]);
+                                    $title = preg_replace('/ \-| Road Less Read$/i', '', $fullTitle);
+                                }
 
-                    if (!empty($title) && !empty($dateAttr)) {
-                        $slug = pathinfo($file, PATHINFO_FILENAME);
-                        $formattedDisplayDate = date('j M Y', strtotime($dateAttr));
+                                // Extract DateTime Attribute
+                                if (preg_match('/<time\s+class="dt-published"\s+datetime="([^"]+)">.*?<\/time>/s', $content, $matches)) {
+                                    $dateAttr = $matches[1];
+                                }
 
-                        // Determine the URL path based on the directory
-                        $relativePath = str_replace(__DIR__, '', $currentDir);
-                        $relativePath = trim($relativePath, '/'); // Remove leading/trailing slashes
-                        $url = '/' . $relativePath . '/' . $slug;
+                                if (!empty($title) && !empty($dateAttr)) {
+                                    $slug = pathinfo($file, PATHINFO_FILENAME);
+                                    $formattedDisplayDate = date('j M Y', strtotime($dateAttr));
 
-                        $posts[] = [
-                            'title' => $title,
-                            'date_attr' => $dateAttr,
-                            'display_date' => $formattedDisplayDate,
-                            'url' => $url,
-                        ];
+                                    // Determine the URL path based on the directory
+                                    $relativePath = str_replace(__DIR__, '', $currentDir);
+                                    $relativePath = trim($relativePath, '/');
+                                    $url = '/' . $relativePath . '/' . $slug;
+
+                                    $posts[] = [
+                                        'title' => $title,
+                                        'date_attr' => $dateAttr,
+                                        'display_date' => $formattedDisplayDate,
+                                        'url' => $url,
+                                    ];
+                                }
+                            }
+                        }
                     }
                 }
-            }
-        }
-    }
 
-    // Sort Posts In Descending Order
-    usort($posts, function($a, $b) {
-        return strtotime($b['date_attr']) - strtotime($a['date_attr']);
-    });
+                // Sort Posts In Descending Order
+                usort($posts, function($a, $b) {
+                    return strtotime($b['date_attr']) - strtotime($a['date_attr']);
+                });
 
-    // Get Latest Fifteen Posts
-    $latestFifteenPosts = array_slice($posts, 0, 15);
+                // Get Latest Fifteen Posts
+                $latestFifteenPosts = array_slice($posts, 0, 15);
 
-    foreach ($latestFifteenPosts as $post) {
-        echo '                    <li><a href="' . htmlspecialchars($post['url']) . '">' . htmlspecialchars($post['title']) . '</a> | ' . htmlspecialchars($post['display_date']) . '</li>' . "\n";
-    }
-    ?>
+                // Output Posts
+                foreach ($latestFifteenPosts as $post) {
+                    echo '                    <li><a href="' . htmlspecialchars($post['url']) . '">' . htmlspecialchars($post['title']) . '</a> | ' . htmlspecialchars($post['display_date']) . '</li>' . "\n";
+                }
+                ?>
 </ul>
 
 

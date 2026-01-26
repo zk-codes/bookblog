@@ -1,8 +1,10 @@
 # Folders 
 .vscode/
-.vscode/sftp.json
 /.vscode/
-/.vscode/sftp.json
+tools/
+/tools/
 
 # Files
+.vscode/sftp.json
+/.vscode/sftp.json
 llm.txt
