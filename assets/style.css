@@ -283,6 +283,81 @@ details li::before {
 }
 
 
+/* ---- Form Elements ---- */
+
+form {
+    margin: 1.5em 0;
+}
+
+label {
+    color: var(--accent);
+    margin-bottom: 0.8em;
+}
+
+select,
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5em;
+    font-family: 'Vollkorn', serif;
+    font-size: 1em;
+    color: var(--text);
+    background-color: var(--content-bg);
+    border: 2px solid var(--accent);
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #5b21b6;
+    box-shadow: 0 0 0 3px rgba(78, 20, 140, 0.1);
+}
+
+select:hover,
+input[type="text"]:hover,
+input[type="email"]:hover {
+    border-color: #5b21b6;
+}
+
+button,
+input[type="submit"] {
+    font-family: 'Smythe', serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--content-bg);
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1em;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #5b21b6;
+    border-color: #5b21b6;
+    transform: translateY(-2px);
+}
+
+button:active,
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+button:focus,
+input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(78, 20, 140, 0.3);
+}
+
+
 /* --- Sidebar Elements ---- */
 
 .sitetitle {

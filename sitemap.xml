@@ -371,4 +371,14 @@
         <rlr:subcategory>creative</rlr:subcategory>
     </url>
 
+    <url>
+        <!-- 8-Page Quarter Zine Template -->
+        <rlr:title>8-Page Quarter Zine Template</rlr:title>
+        <loc>https://roadlessread.com/tools/quarterzine</loc>
+        <lastmod>2026-01-30</lastmod>
+        <rlr:content>download printable templates for quarter-fold zines.</rlr:content>
+        <rlr:category>tools</rlr:category>
+        <rlr:subcategory>creative</rlr:subcategory>
+    </url>
+
 </urlset>
