@@ -98,6 +98,15 @@
     </url>
 
     <url>
+        <!-- The Bear Blog Carnival -->
+        <rlr:title>The Bear Blog Carnival</rlr:title>
+        <loc>https://roadlessread.com/lists/bearbc</loc>
+        <lastmod>2026-02-01</lastmod>
+        <rlr:content>tracking a community blog carnival with host interviews.</rlr:content>
+        <rlr:category>lists</rlr:category>
+    </url>
+
+    <url>
         <!-- The IndieWeb Book Club -->
         <rlr:title>The IndieWeb Book Club</rlr:title>
         <loc>https://roadlessread.com/lists/iwbc</loc>
