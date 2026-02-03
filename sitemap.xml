@@ -96,32 +96,17 @@
         <rlr:content>the only SFF/YA/Non-Fiction one you'll ever need.</rlr:content>
         <rlr:category>lists</rlr:category>
     </url>
+    
+    <!-- Directories -->
 
     <url>
-        <!-- The Bear Blog Carnival -->
-        <rlr:title>The Bear Blog Carnival</rlr:title>
-        <loc>https://roadlessread.com/lists/bearbc</loc>
-        <lastmod>2026-02-01</lastmod>
-        <rlr:content>tracking a community blog carnival with host interviews.</rlr:content>
+        <!-- Zinesters Directory -->
+        <rlr:title>Zinesters Directory</rlr:title>
+        <loc>https://roadlessread.com/lists/zinesters</loc>
+        <lastmod>2026-02-03</lastmod>
+        <rlr:content>zine makers and their corners of the internet.</rlr:content>
         <rlr:category>lists</rlr:category>
-    </url>
-
-    <url>
-        <!-- The IndieWeb Book Club -->
-        <rlr:title>The IndieWeb Book Club</rlr:title>
-        <loc>https://roadlessread.com/lists/iwbc</loc>
-        <lastmod>2026-01-23</lastmod>
-        <rlr:content>revitalizing a community book club with host interviews.</rlr:content>
-        <rlr:category>lists</rlr:category>
-    </url>
-
-    <url>
-        <!-- The IndieWeb Carnival -->
-        <rlr:title>The IndieWeb Carnival</rlr:title>
-        <loc>https://roadlessread.com/lists/iwc</loc>
-        <lastmod>2026-01-23</lastmod>
-        <rlr:content>complementing a monthly blog carnival with host interviews.</rlr:content>
-        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>directories</rlr:subcategory>
     </url>
 
     <!-- Fantasy -->
@@ -186,6 +171,38 @@
         <rlr:subcategory>fantasy</rlr:subcategory>
     </url>
 
+    <!-- Interviews -->
+
+        <url>
+        <!-- The Bear Blog Carnival -->
+        <rlr:title>The Bear Blog Carnival</rlr:title>
+        <loc>https://roadlessread.com/lists/bearbc</loc>
+        <lastmod>2026-02-01</lastmod>
+        <rlr:content>tracking a community blog carnival with host interviews.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>interviews</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- The IndieWeb Book Club -->
+        <rlr:title>The IndieWeb Book Club</rlr:title>
+        <loc>https://roadlessread.com/lists/iwbc</loc>
+        <lastmod>2026-01-23</lastmod>
+        <rlr:content>revitalizing a community book club with host interviews.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>interviews</rlr:subcategory>
+    </url>
+
+    <url>
+        <!-- The IndieWeb Carnival -->
+        <rlr:title>The IndieWeb Carnival</rlr:title>
+        <loc>https://roadlessread.com/lists/iwc</loc>
+        <lastmod>2026-01-23</lastmod>
+        <rlr:content>complementing a monthly carnival with host interviews.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>interviews</rlr:subcategory>
+    </url>
+
     <!-- Scifi -->
 
     <url>
@@ -233,7 +250,7 @@
         <rlr:title>Books Like The Expanse</rlr:title>
         <loc>https://roadlessread.com/lists/expanse</loc>
         <lastmod>2025-12-04</lastmod>
-        <rlr:content>more starflung futures in the solar system and thrilling adventures.</rlr:content>
+        <rlr:content>more thrilling, starflung futures in the solar system.</rlr:content>
         <rlr:category>lists</rlr:category>
         <rlr:subcategory>scifi</rlr:subcategory>
     </url>
