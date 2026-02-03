@@ -238,16 +238,16 @@
         <rlr:subcategory>scifi</rlr:subcategory>
     </url>
 
-    <!-- Young Adult -->
+    <!-- Webrings -->
 
-    <url>
-        <!-- Books Like The Book Thief -->
-        <rlr:title>Books Like The Book Thief</rlr:title>
-        <loc>https://roadlessread.com/lists/bookthief</loc>
-        <lastmod>2025-12-04</lastmod>
-        <rlr:content>other historicals and sweeping narratives to accompany this haunting volume.</rlr:content>
+        <url>
+        <!-- Zine Appreciation Webring -->
+        <rlr:title>Zine Appreciation Webring</rlr:title>
+        <loc>https://roadlessread.com/lists/zineappreciation</loc>
+        <lastmod>2026-02-03</lastmod>
+        <rlr:content>connecting zine makers and appreciators across the web.</rlr:content>
         <rlr:category>lists</rlr:category>
-        <rlr:subcategory>young_adult</rlr:subcategory>
+        <rlr:subcategory>webrings</rlr:subcategory>
     </url>
 
     <!-- Yearly Compilations -->
@@ -290,6 +290,18 @@
         <rlr:content>I thought I’d start one of these!</rlr:content>
         <rlr:category>lists</rlr:category>
         <rlr:subcategory>yearly_compiliations</rlr:subcategory>
+    </url>
+
+    <!-- Young Adult -->
+
+    <url>
+        <!-- Books Like The Book Thief -->
+        <rlr:title>Books Like The Book Thief</rlr:title>
+        <loc>https://roadlessread.com/lists/bookthief</loc>
+        <lastmod>2025-12-04</lastmod>
+        <rlr:content>other historicals and sweeping narratives to accompany this haunting volume.</rlr:content>
+        <rlr:category>lists</rlr:category>
+        <rlr:subcategory>young_adult</rlr:subcategory>
     </url>
 
     <!-- NOTES -->
