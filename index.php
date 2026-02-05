@@ -3,12 +3,19 @@
 
     <!-- HEAD -->
     <head>
+        <!-- Meta Tags -->
         <meta charset="utf-8">
-        <title>Road Less Read: Better Books For Better Reading</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Files -->
         <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/assets/style.css">
+        <!-- Links -->
+        <link rel="authorization_endpoint" href="https://indielogin.com/auth" />
+        <link rel="micropub" href="https://roadlessread.com/micropub/" />
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
         <link rel="webmention" href="https://webmention.io/zacharykai.net/webmention" />
+        <!-- Page Details -->
+        <title>Road Less Read: Better Books For Better Reading</title>
         <link rel="canonical" href="https://roadlessread.com/">
         <meta name="date" content="2019-06-02">
         <meta name="last-modified" content="2025-08-20">
