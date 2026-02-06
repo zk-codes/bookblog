@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="/assets/style.css">
         <!-- Links -->
         <link rel="authorization_endpoint" href="https://indielogin.com/auth" />
+        <link rel="indieauth-metadata" href="https://roadlessread.com/.well-known/oauth-authorization-server" />
+        <link rel="me" href="mailto:hi@zacharykai.net">
+        <link rel="me" href="https://github.com/zk-codes">
         <link rel="micropub" href="https://roadlessread.com/micropub/" />
         <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
         <link rel="webmention" href="https://webmention.io/zacharykai.net/webmention" />
@@ -50,111 +53,128 @@
         </aside>
 
         <!-- MAIN CONTENT -->
-        <main class="main-content-area">
+        <main class="main-content-area h-entry">
 
             <!-- Header -->
             <header>
+                <!-- Breadcrumbs -->
                 <p class="smalltext">You Are Here → <a href="/">Homepage</a> ↴</p>
+                <!-- Heading -->
                 <h1 class="p-name">Enough With The Doomscrolling!</h1>
+                <!-- Metadata -->
                 <p class="smalltext">
-                    <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
+                    <!-- Author --->
+                    <strong>Written By</strong>: <a href="/about" class="p-author h-card" rel="author">Zachary Kai</a> »
+                    <!-- Date Written -->
                     <strong>Published</strong>: <time class="dt-published" datetime="2019-06-02">2 Jun 2019</time> |
-                    <strong>Updated</strong>: <time class="dt-modified" datetime="2025-11-15">15 Nov 2025</time>
+                    <!-- Date Updated -->
+                    <strong>Updated</strong>: <time class="dt-updated" datetime="2025-11-15">15 Nov 2025</time>
                 </p>
+                <!-- Invisible Microformats -->
+                <p style="display: none;" class="p-summary">Road Less Read is a book, literature, writing, and zine site with lists, resources, and tools.</p>
             </header>
 
             <!-- Introduction -->
-            <p id="top" class="p-summary dropcap">Better books for better reading. Find something you <strong>actually</strong> want to read, <em>fast</em>. Just <a href="/sitemap">browse here</a> for what you like, and I’ll recommend your next book. Or, find it among all my favorites in <a href="/lists/read">this curated list</a>.</p>
-            <p><strong>Note: This site is still very much under construction! Or should I say restoration?</strong></p>
+            <section class="e-content">
 
-            <!-- Featured Image -->
-            <img src="/assets/imgs/decorative/booksonshelves2.png" alt="Books on shelves, filtered via dithering." loading="lazy">
-            <p>Photo Credit: Christine Neale</p>
+                <section>
+                    <p id="top" class="dropcap">Better books for better reading. Find ones you <strong>actually</strong> want to read, <em>fast</em>. Just <a href="/sitemap">browse</a> for what you like, and I'll recommend your next book. Or, find it among all my favorites in <a href="/lists/read">this curated list</a>.</p>
+                    <p><strong>Note: This site is still very much under construction! Or should I say restoration?</strong></p>
+                </section>
+                
+                <!-- Featured Image -->
+                <section>
+                    <img class="u-photo" src="/assets/imgs/decorative/booksonshelves2.png" alt="Books on shelves, filtered via dithering." loading="lazy">
+                    <p>Photo Credit: Christine Neale</p>
+                </section>
+                
+                <section>
+                    <!-- Latest Entries -->
+                    <h2>Latest Entries</h2>
 
-            <!-- Latest Entries: Script For Pulling Them In -->
-            <section>
+                    <ul>
+                    <?php
+                    // Source Directories
+                    $directories = [
+                        __DIR__ . '/lists/',
+                        __DIR__ . '/notes/',
+                        __DIR__ . '/reviews/',
+                        __DIR__ . '/tools/',
+                    ];
+                    $posts = [];
 
-            </section>
-                <h2>Latest Entries</h2>
+                    // Scan directories for HTML and PHP files
+                    foreach ($directories as $currentDir) {
+                        if (is_dir($currentDir)) {
+                            $files = scandir($currentDir);
 
-                <ul>
-                <?php
-                // Source Directories
-                $directories = [
-                    __DIR__ . '/lists/',
-                    __DIR__ . '/notes/',
-                    __DIR__ . '/reviews/',
-                    __DIR__ . '/tools/',
-                ];
-                $posts = [];
+                            foreach ($files as $file) {
+                                $extension = pathinfo($file, PATHINFO_EXTENSION);
 
-                // Scan directories for HTML and PHP files
-                foreach ($directories as $currentDir) {
-                    if (is_dir($currentDir)) {
-                        $files = scandir($currentDir);
+                                if ($extension === 'html' || $extension === 'php') {
+                                    $filePath = $currentDir . $file;
+                                    $content = file_get_contents($filePath);
+                                    $title = '';
+                                    $dateAttr = '';
 
-                        foreach ($files as $file) {
-                            $extension = pathinfo($file, PATHINFO_EXTENSION);
+                                    // Extract Title & Remove " | Zachary Kai"
+                                    if (preg_match('/<title>(.*?)<\/title>/s', $content, $matches)) {
+                                        $fullTitle = trim($matches[1]);
+                                        $title = preg_replace('/ \-| Road Less Read$/i', '', $fullTitle);
+                                    }
 
-                            if ($extension === 'html' || $extension === 'php') {
-                                $filePath = $currentDir . $file;
-                                $content = file_get_contents($filePath);
-                                $title = '';
-                                $dateAttr = '';
+                                    // Extract DateTime Attribute
+                                    if (preg_match('/<time\s+class="dt-published"\s+datetime="([^"]+)">.*?<\/time>/s', $content, $matches)) {
+                                        $dateAttr = $matches[1];
+                                    }
 
-                                // Extract Title & Remove " | Zachary Kai"
-                                if (preg_match('/<title>(.*?)<\/title>/s', $content, $matches)) {
-                                    $fullTitle = trim($matches[1]);
-                                    $title = preg_replace('/ \-| Road Less Read$/i', '', $fullTitle);
-                                }
+                                    if (!empty($title) && !empty($dateAttr)) {
+                                        $slug = pathinfo($file, PATHINFO_FILENAME);
+                                        $formattedDisplayDate = date('j M Y', strtotime($dateAttr));
 
-                                // Extract DateTime Attribute
-                                if (preg_match('/<time\s+class="dt-published"\s+datetime="([^"]+)">.*?<\/time>/s', $content, $matches)) {
-                                    $dateAttr = $matches[1];
-                                }
+                                        // Determine the URL path based on the directory
+                                        $relativePath = str_replace(__DIR__, '', $currentDir);
+                                        $relativePath = trim($relativePath, '/');
+                                        $url = '/' . $relativePath . '/' . $slug;
 
-                                if (!empty($title) && !empty($dateAttr)) {
-                                    $slug = pathinfo($file, PATHINFO_FILENAME);
-                                    $formattedDisplayDate = date('j M Y', strtotime($dateAttr));
-
-                                    // Determine the URL path based on the directory
-                                    $relativePath = str_replace(__DIR__, '', $currentDir);
-                                    $relativePath = trim($relativePath, '/');
-                                    $url = '/' . $relativePath . '/' . $slug;
-
-                                    $posts[] = [
-                                        'title' => $title,
-                                        'date_attr' => $dateAttr,
-                                        'display_date' => $formattedDisplayDate,
-                                        'url' => $url,
-                                    ];
+                                        $posts[] = [
+                                            'title' => $title,
+                                            'date_attr' => $dateAttr,
+                                            'display_date' => $formattedDisplayDate,
+                                            'url' => $url,
+                                        ];
+                                    }
                                 }
                             }
                         }
                     }
-                }
 
-                // Sort Posts In Descending Order
-                usort($posts, function($a, $b) {
-                    return strtotime($b['date_attr']) - strtotime($a['date_attr']);
-                });
+                    // Sort Posts In Descending Order
+                    usort($posts, function($a, $b) {
+                        return strtotime($b['date_attr']) - strtotime($a['date_attr']);
+                    });
 
-                // Get Latest Fifteen Posts
-                $latestFifteenPosts = array_slice($posts, 0, 15);
+                    // Get Latest Fifteen Posts
+                    $latestFifteenPosts = array_slice($posts, 0, 15);
 
-                // Output Posts
-                foreach ($latestFifteenPosts as $post) {
-                    echo '                    <li><a href="' . htmlspecialchars($post['url']) . '">' . htmlspecialchars($post['title']) . '</a> | ' . htmlspecialchars($post['display_date']) . '</li>' . "\n";
-                }
-                ?>
-</ul>
+                    // Output Posts
+                    foreach ($latestFifteenPosts as $post) {
+                        echo '                        <li><a href="' . htmlspecialchars($post['url']) . '">' . htmlspecialchars($post['title']) . '</a> | ' . htmlspecialchars($post['display_date']) . '</li>' . "\n";
+                    }
+                    ?>
+                    </ul>
+                </section>
 
+                <!-- Site Navigation -->
+                <section>
+                    <p>To see everything that's on this site, visit <a href="/sitemap.html">the sitemap</a>. You can also browse by <a href="/lists/">lists</a>, <a href="/notes/">notes</a>, and <a href="/reviews/">reviews</a>. Happy reading, and hope you find something useful!</p>
+                </section>
 
-            </section>
+                <!-- Copy & Share Link -->
+                <section>
+                    <p class="smalltext"><strong>Copy + Share</strong>: <a href="https://roadlessread.com/" class="u-url">roadlessread.com</a></p>
+                </section>
 
-            <!-- Site Navigation -->
-            <section>
-                <p>To see everything that's on this site, visit <a href="/sitemap.html">the sitemap</a>. You can also browse by <a href="/lists/">lists</a>, <a href="/notes/">notes</a>, and <a href="/reviews/">reviews</a>. Happy reading, and hope you find something useful!</p>
             </section>
 
             <p class="end">←------ •--♡--• ------→</p>
@@ -178,7 +198,7 @@
                         </picture>
                     </section>
                     <section id="h-card-content">
-                        <p><strong><a class="u-url u-id p-name" href="https://roadlessread.com" rel="me">
+                        <p><strong><a class="u-url u-id p-name p-author" href="https://roadlessread.com/about" rel="me author">
                         <span class="fn">Zachary Kai</span></a></strong> — 
                         <span class="p-pronouns">he/him</span> | 
                         <a class="u-email email" href="mailto:hi@zacharykai.net" rel="me">hi@zacharykai.net</a></p>
