@@ -10,12 +10,12 @@
         <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/assets/style.css">
         <!-- Links -->
-        <link rel="authorization_endpoint" href="https://indielogin.com/auth" />
         <link rel="indieauth-metadata" href="https://roadlessread.com/.well-known/oauth-authorization-server" />
+        <link rel="authorization_endpoint" href="https://roadlessread.com/auth/" />
+        <link rel="token_endpoint" href="https://roadlessread.com/auth/token.php" />
         <link rel="me" href="mailto:hi@zacharykai.net">
         <link rel="me" href="https://github.com/zk-codes">
         <link rel="micropub" href="https://roadlessread.com/micropub/" />
-        <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
         <link rel="webmention" href="https://webmention.io/zacharykai.net/webmention" />
         <!-- Page Details -->
         <title>Road Less Read: Better Books For Better Reading</title>
@@ -38,6 +38,7 @@
                 <p class="sitetitle"><a href="/">Road Less Read</a></p>
                 <nav>
                     <p><a href="/about.html">About</a></p>
+                    <p><a href="/jots/">Jots</a></p>
                     <p><a href="/links">Links</a></p>
                     <p><a href="/lists/">Lists</a></p>
                     <p><a href="/notes/">Notes</a></p>

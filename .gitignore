@@ -1,12 +1,13 @@
-# Folders 
-.vscode/
-/.vscode/
-assets/scripts
-/assets/scripts
-tools/
-/tools/
+# --- Folders 
 
-# Files
+.vscode/
+.well-known/
+assets/scripts
+auth/
+micropub/
+tools/
+
+# --- Files
+
 .vscode/sftp.json
-/.vscode/sftp.json
 llm.txt
