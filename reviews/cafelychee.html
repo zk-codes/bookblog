@@ -1,98 +1,120 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
+    <!-- HEAD -->
     <head>
         <meta charset="utf-8">
-        <title>TK | Road Less Read</title>
+        <title><!-- PAGE_TITLE --></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/assets/style.css">
-        <link rel="stylesheet" href="/assets/styles/print.css" media="print">
-        <link href="/assets/manifest.json" rel="manifest"/>
-        <link rel="alternate" type="application/rss+xml" title="Zachary Kai" href="/assets/rss.xml">
-        <link rel="webmention" href="https://webmention.io/roadlessread.com/webmention" />
+        <link rel="shortcut icon" href="/rlr/assets/icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/rlr/assets/style.css">
+        <link rel="webmention" href="https://webmention.io/zacharykai.net/webmention" />
         <link rel="canonical" href="https://roadlessread.com/">
         <meta name="date" content="20XX-XX-XX">
         <meta name="last-modified" content="20XX-XX-XX">
         <meta name="description" content="">
     </head>
     <body>
-        <p><a href="#top" class="essentials">Begin reading...</a></p>
-        <header><nav><a href="/" title="My homepage.">Road Less Read</a></nav></header>
-        <main>
+
+        <!-- SIDEBAR-->
+
+        <aside class="sidebar">
+
+            <!-- Skip/Return Link -->
+            <p><a href="#top" class="smalltext">Skip/Return To Top</a></p>
+
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Menu -->
             <header>
-                <p class="breadcrumbs"><a href="/">Homepage</a> •</p>
-                <h1 class="p-name">EXAMPLE HEADING</h1>
-                <p class="postmeta">
-                    <strong>Published</strong>: <time class="dt-published" datetime="20XX-XX-XX">XX XXX 20XX</time> | 
+
+                <!-- Mobile Menu -->
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p class="sitetitle"><a href="/">Road Less Read</a></p>
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+
+                <!-- Menu Items -->
+                <nav>
+                    <p><a href="/about.html">About</a></p>
+                    <p><a href="/jots/">Jots</a></p>
+                    <p><a href="/links">Links</a></p>
+                    <p><a href="/lists/">Lists</a></p>
+                    <p><a href="/notes/">Notes</a></p>
+                    <p><a href="/reviews/">Reviews</a></p>
+                    <p><a href="/sitemap">Sitemap</a></p>
+                    <p><a href="/tools/">Tools</a></p>
+                </nav>
+
+                <!-- Subscribe link -->
+                <p class="highlight"><a href="/subscribe">Subscribe</a></p>
+
+            </header>
+
+            <p class="smalltext">Est. 2019</p>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content-area">
+
+            <!-- Header -->
+            <header>
+                <p class="smalltext"><a href="/rlr/">Homepage</a></p>
+                <h1 class="p-name"></h1>
+                <p class="smalltext">
+                    <strong>Published</strong>: <time class="dt-published" datetime="20XX-XX-XX">XX XXX 20XX</time> |
                     <strong>Updated</strong>: <time class="dt-modified" datetime="20XX-XX-XX">XX XXX 20XX</time>
                 </p>
             </header>
-            <p id="top" class="p-summary"></p>
-            <details>
-                <summary><strong>Table Of Contents</strong></summary>
-                <ul>
-                    <li><a href="#"></a></li>
-                </ul>
-            </details>
-            <p>•--♡--•</p>
-            <section class="essentials">
-                <p><strong>Copy & Share</strong>: <a href="/" class="u-url">roadlessread.com/</a></p>
-                <p><strong>Statistics</strong> &rarr; Word Count: 44 | Reading Time: 0:13</p>
-                <hr>
-                <p>
-                    <strong>Enjoyed This? Support What I Do:</strong>
-                    <a href="/paypal" rel="noopener">PayPal</a> |
-                    <a href="/stripe" rel="noopener">Stripe</a>
-                </p>
-                <hr>
-                <p>
-                    <strong>Reply Via</strong>:
-                    <a href="/contact">Email</a> | 
-                    <a href="/guestbook">Guestbook</a> |
-                    <a href="/unoffice-hours">UnOffice Hours</a> | 
-                    <a href="/webmention" rel="noopener">Webmention</a>
-                </p>
-                <p>
-                    <strong>Found An Error?</strong>
-                    <a href="/contact" rel="noopener">Suggest An Edit</a> |
-                    <a href="/source" rel="noopener">View Source Code</a>
-                </p>
+
+            <!-- PRIMARY CONTENT -->
+            <p id="top" class="p-summary dropcap"></p>
+
+            <section>
+
             </section>
+
+            <p class="end">←------ •--♡--• ------→</p>
+
+            <!-- FOOTER -->
+            <footer>
+
+                <!-- Newsletter Signup -->
+                <section>
+                    <p><strong>The Internet Isn't Fun Anymore. I Have Nothing To Read.</strong></h2>
+                    <p>Rubbish! It's all there, but there's no map. So skip the searching. <a href="https://lunaseeker.com/newsletter/" rel="noopener">Get curated books and curiosities delivered!</a></p>
+                </section>
+
+                <!-- H-Card -->
+                <section class="h-card vcard">
+                    <section id="h-card-image">
+                        <picture>
+                            <source srcset="/rlr/assets/icon.webp" type="image/webp">
+                            <img class="u-photo" loading="lazy" src="/rlr/assets/icon.png" alt="Zachary Kai's digital drawing: 5 stacked books (blue/teal/green/purple, black spine designs), green plant behind top book, purple heart on either side.">
+                        </picture>
+                    </section>
+                    <section id="h-card-content">
+                        <p><strong><a class="u-url u-id p-name" href="https://roadlessread.com" rel="me">
+                        <span class="fn">Zachary Kai</span></a></strong> — 
+                        <span class="p-pronouns">he/him</span> | 
+                        <a class="u-email email" href="mailto:hi@zacharykai.net" rel="me">hi@roadlessread.com</a></p>
+                        <p class="p-note">Zachary Kai is a space fantasy writer, offbeat queer, traveler, zinester, and avowed generalist. The internet is his livelihood and lifeline.</p>
+                    </section>
+                </section>
+
+                <!-- Acknowledgement Of Country -->
+                <section>
+                    <p><strong>Acknowledgement Of Country</strong>: I owe my existence to the <a href="https://kht.org.au/" rel="noopener">Koori people's</a> lands: tended for millennia by the traditional owners and storytellers. What a legacy. May it prevail.</p>
+                </section>
+
+            </footer>
+
         </main>
-        <section class="h-card vcard">
-            <section class="h-card-image">
-                <picture>
-                    <source srcset="/assets/zk_icon.webp" type="image/webp">
-                    <img class="u-photo" loading="lazy" src="/assets/zk_icon.png" alt="A colorful, stylized digital illustration by Zachary Kai featuring a stack of five books in shades of blue, teal, green, and purple, each with bold black geometric or abstract spine designs. A leafy green plant is tucked behind the top book, its fronds spreading upward. On either side of the stack is a purple heart.">
-                </picture>
-            </section>
-            <section class="h-card-content">
-                <p><strong><a class="u-url u-id p-name" href="https://roadlessread.com" rel="me"><span class="fn">Zachary Kai</span></a></strong> — <span class="p-pronouns">he/him</span> | <a class="u-email email" href="mailto:hi@roadlessread.com" rel="me">hi@roadlessread.com</a></p>
-                <p class="p-note">Zachary Kai is a space fantasy writer, offbeat queer, traveler, zinester, and avowed generalist. The internet is his livelihood and lifeline.</p>
-            </section>
-        </section>
-        <section class="acknowledgement">
-            <p><strong>Acknowledgement Of Country</strong></p>
-            <p>I acknowledge the folks whose lands I owe my existence to: the Koori people. The traditional owners, storytellers, and first peoples. This land's been tended and lived alongside for millennia with knowledge passed down through generations. What a legacy. May it prevail.</p>
-        </section>
-        <p><a href="#top" class="essentials">Read again...</a></p>
-        <footer>
-            <p>Est. 2024 || 
-                <a href="/about">About</a> | 
-                <a href="/colophon">Accessibility & Colophon</a> | 
-                <a href="/changelog">Changelog</a> | 
-                <a href="/cv">CV</a> | 
-                <a href="/hello">Contact</a> | 
-                <a href="/newsletter">Newsletter</a> | 
-                <a href="/random">Random</a> | 
-                <a href="/assets/rss.xml">RSS</a> |  
-                <a href="/sitemap">Sitemap</a>
-            </p>
-            <p class="elsewhere">Elsewhere || 
-                <a href="/github" rel="noopener">Github</a> | 
-                <a href="/indieweb" rel="noopener">Indieweb</a> | 
-                <a href="/internet-archive" rel="noopener">Internet Archive</a> | 
-                <a href="/linkedin" rel="noopener">Linkedin</a></p>
-        </footer>
     </body>
 </html>

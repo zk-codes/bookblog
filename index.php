@@ -33,9 +33,23 @@
             <!-- Skip/Return Link -->
             <p><a href="#top" class="smalltext">Skip/Return To Top</a></p>
 
-            <!-- Header Menu -->
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Menu -->
             <header>
-                <p class="sitetitle"><a href="/">Road Less Read</a></p>
+
+                <!-- Mobile Menu -->
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p class="sitetitle"><a href="/">Road Less Read</a></p>
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+
+                <!-- Menu Items -->
                 <nav>
                     <p><a href="/about.html">About</a></p>
                     <p><a href="/jots/">Jots</a></p>
@@ -46,7 +60,10 @@
                     <p><a href="/sitemap">Sitemap</a></p>
                     <p><a href="/tools/">Tools</a></p>
                 </nav>
+
+                <!-- Subscribe link -->
                 <p class="highlight"><a href="/subscribe">Subscribe</a></p>
+
             </header>
 
             <p class="smalltext">Est. 2019</p>
