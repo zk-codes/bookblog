@@ -7,14 +7,22 @@ ini_set('display_errors', 1);
 
 $sites = [
     [
+        // Road Less Read
         'id' => 1,
         'site_name' => 'Road Less Read',
         'site_url' => 'https://roadlessread.com/',
     ],
     [
+        // Mewizard
         'id' => 2,
         'site_name' => 'Mewizard',
-        'site_url' => 'https://mewizard.nekoweb.org',
+        'site_url' => 'https://mewizard.nekoweb.org/work',
+    ],
+    [
+        // G.B.
+        'id' => 3,
+        'site_name' => 'G.B.',
+        'site_url' => 'https://donthave2sting.bearblog.dev/',
     ],
 ];
 
@@ -115,14 +123,14 @@ if ($action && in_array($action, ['random', 'next', 'prev', 'previous', 'list', 
     <!-- HEAD -->
     <head>
         <meta charset="utf-8">
-        <title>Zine Appreciation Webring - Road Less Read</title>
+        <title>Zine Appreciation Webring | Road Less Read</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/assets/style.css">
         <link rel="webmention" href="https://webmention.io/zacharykai.net/webmention" />
         <link rel="canonical" href="https://roadlessread.com/lists/zineappreciation">
         <meta name="date" content="2026-02-03">
-        <meta name="last-modified" content="2026-02-03">
+        <meta name="last-modified" content="2026-02-15">
         <meta name="description" content="A webring connecting zine makers and appreciators across the internet.">
     </head>
     <body>
@@ -181,7 +189,7 @@ if ($action && in_array($action, ['random', 'next', 'prev', 'previous', 'list', 
                 <p class="smalltext">
                     <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
                     <strong>Published</strong>: <time class="dt-published" datetime="2026-02-03">3 Feb 2026</time> |
-                    <strong>Updated</strong>: <time class="dt-modified" datetime="2026-02-03">3 Feb 2026</time>
+                    <strong>Updated</strong>: <time class="dt-modified" datetime="2026-02-15">15 Feb 2026</time>
                 </p>
             </header>
 
